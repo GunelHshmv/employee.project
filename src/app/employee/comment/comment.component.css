@@ -1,0 +1,66 @@
+bodey{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.cont{
+    width: 100%;
+    height: 92vh;
+    background-image: url("https://www.kapturecrm.com/blog/wp-content/uploads/2017/07/sakshi.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.div{
+    width: 38%;
+    height: 100%;
+    margin-left: 800px;
+    padding-top: 80px;
+}
+input{
+    display: flex;
+    flex-wrap: wrap;
+height: 200px;    
+width: 100%;
+border: 3px solid brown;
+}
+h3{
+    font-size: 32px;
+}
+.btn{
+    width: 100%;
+    height: 44px;
+    display: flex;
+    gap: 3px;
+    margin-top: 122px;
+}
+.btna{
+    border-radius: 20px;
+    width: 100%;
+}
+a{
+    color: red;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px;
+}
+a:hover{
+    color: rgb(85, 24, 24);
+    font-weight: bold;
+}
+.sendBtn{
+    color: red;
+    width: 16%;
+margin-left: 420px;
+margin-top: 6px;
+height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 3px;
+}

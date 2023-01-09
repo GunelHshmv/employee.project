@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cont">
+        <div class="div">
+            <h3>Please Add Your Comment</h3>
+            <div class="commentDiv">
+                <input type="text" placeholder="Please Add Your Comment" [(ngModel)]="comment" name="comment" required>
+            </div>
+            <div class="send" >
+                <button type="button" class="sendBtn" (click)="send()" >Send</button>
+            </div>
+            
+            <div class="btn">
+                <button  class="btna"type="button"><a routerLink="/main">Main</a></button>
+                <button  class="btna"type="button"><a routerLink="/tableemp" >Table</a></button>
+                <button  class="btna"type="button"><a routerLink="/add">Add</a></button>
+                <button  class="btna"type="button"  (click)="send()"><a routerLink="/commentT">Comment Table</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

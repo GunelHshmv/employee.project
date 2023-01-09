@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cont">
+        <h3>Comment Table</h3>
+        <table>
+            <thead>
+                <tr>All Comments</tr>
+            </thead>
+            <tbody>
+                <tr >
+                    <td>
+                        Employees in managerial positions are people who are always looking after others, i.e., their team members. They are constantly guiding others to progress and advance. However, they need guidance to reach their goals too. Managers who receive feedback on their strengths are 8.9% more productive. They are more effective and profitable post-intervention.Here are some critical appraisal comments for leaders and managers.
+                    </td>
+                </tr>
+                <tr *ngFor="let com of tableArr">
+                    <td>{{com}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="btn">
+            <button  class="btna"type="button"><a routerLink="/main">Main</a></button>
+            <button  class="btna"type="button"><a routerLink="/tableemp" >Table</a></button>
+            <button  class="btna"type="button"><a routerLink="/add">Add</a></button>
+            <button  class="btna"type="button"><a routerLink="/comment">Comment</a></button>
+        </div>
+    </div>
+</body>
+</html>

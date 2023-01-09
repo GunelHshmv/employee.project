@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cont">
+        <h3>Welcome To Employee Register Page</h3>
+        <div class="main">
+          <div class="inpDiv">
+            <label >Please Enter Your Fullname </label>
+            <input type="text" placeholder="Enter Your FullName" [(ngModel)]="names">
+        </div>
+        <div class="errorDiv" *ngIf="flag && names==null">Pleace Enter Valid Name</div>
+        <div class="inpDiv">
+            <label >Please Enter Your Password </label>
+            <input type="text" placeholder="Enter Your Password" [(ngModel)]="pass">
+        </div>
+        <div class="errorDiv" *ngIf="flag && pass==null">Pleace Enter Valid Password</div>
+          <button (click)="check()" (click)="check()">Check</button>
+        </div>
+    </div>
+</body>
+</html>

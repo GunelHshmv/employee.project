@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cont">
+        <h3>Add New Employee To Table</h3>
+        <div class="form">
+            <form [formGroup]="addData">
+                <div class="bigdiv">
+                    <div class="div">
+                    <label >Employee's Name</label>
+                    <input type="text" placeholder="Enter Name" formControlName="names">
+                </div>
+                <div class="errordiv" *ngIf="!addData.get('names').valid && submit && (addData.get('names').value==null)">Pleace Enter Name</div> 
+                <div class="div">
+                    <label >Employee's Surname</label>
+                    <input type="text" placeholder="Enter Surname" formControlName="surnames">
+                </div>
+                <div class="errordiv" *ngIf="!addData.get('surnames').valid && submit && (addData.get('surnames').value==null)">Pleace Enter Surname</div> 
+                <div class="div">
+                    <label >Employee's Email</label>
+                    <input type="text" placeholder="Enter Email" formControlName="emails">
+                </div>
+                <div class="errordiv" *ngIf="!addData.get('emails').valid && submit && (addData.get('emails').value==null)">Pleace Enter Email</div> 
+                <div class="div">
+                    <label >Employee's Position</label>
+                    <input type="text" placeholder="Enter Position" formControlName="positions">
+                </div>
+                <div class="errordiv" *ngIf="!addData.get('positions').valid && submit && (addData.get('positions').value==null)">Pleace Enter Position</div> 
+                <div class="div">
+                    <label >Employee's Salary</label>
+                    <input type="text" placeholder="Enter Salary Amount" formControlName="salarys">
+                </div>
+                <div class="errordiv" *ngIf="!addData.get('salarys').valid && submit && (addData.get('salarys').value==null)">Pleace Enter Salary</div> 
+                 <div class="div">
+                    <label for="">Phone</label>
+                    <input type="number"  name="studentPhone"  placeholder="Enter Phone Number" formControlName="phones">
+                  </div>
+                <div class="errordiv" *ngIf="!addData.get('phones').valid && submit && (addData.get('phones').value==null)">Pleace Enter Phone</div> 
+                  <div class="div">
+                    <label >Employee's Age</label>
+                    <input type="text" placeholder="Enter Age" formControlName="ages">
+                </div>
+                <div class="errordiv" *ngIf="!addData.get('ages').valid && submit && (addData.get('ages').value==null)">Pleace Enter Age</div> 
+
+                </div>
+                
+            </form>
+        </div>
+        <div class="footPart">
+            <button  class="btn" type="button"><a routerLink="/main">Main</a></button>
+            <button  class="btn"type="button" (click)="addClick()"><a>Send Table</a></button>
+            <button  class="btn"type="button"><a routerLink="/comment">Comment</a></button>
+        </div>
+    </div>
+</body>
+</html>
