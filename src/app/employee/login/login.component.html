@@ -14,12 +14,12 @@
             <label >Please Enter Your Fullname </label>
             <input type="text" placeholder="Enter Your FullName" [(ngModel)]="names">
         </div>
-        <div class="errorDiv" *ngIf="flag && names==null">Pleace Enter Valid Name</div>
+        <div class="errorDiv" *ngIf="flag">Pleace Enter Valid Name</div>
         <div class="inpDiv">
             <label >Please Enter Your Password </label>
             <input type="text" placeholder="Enter Your Password" [(ngModel)]="pass">
         </div>
-        <div class="errorDiv" *ngIf="flag && pass==null">Pleace Enter Valid Password</div>
+        <div class="errorDiv" *ngIf="flag">Pleace Enter Valid Password</div>
           <button (click)="check()" (click)="check()">Check</button>
         </div>
     </div>
